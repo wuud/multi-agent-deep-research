@@ -78,7 +78,7 @@ graph TD
     P -- 迭代次数未满 --> S(Planner: 生成下一轮搜索查询);
     P -- 迭代次数已满 --> T[结束迭代循环];
 
-    S -- 生成新查询 --> G; # 回到循环开始，使用新查询
+    S -- 生成新查询 --> G;
     S -- LLM决定停止或无新查询 --> T;
 
     T --> U(Reporter: 整合所有验证过的上下文);
@@ -90,6 +90,7 @@ graph TD
     class C,D,E,G,I,N,O,P,R,S,T,U,V agent;
     classDef external fill:#ccf,stroke:#333,stroke-width:2px;
     class H,K,L,M,Q external;
+```
 
 ## 配置
 
