@@ -126,3 +126,7 @@ graph TD
 ```bash
 python multi-agent_deep_research.py
 ```
+
+# 演示
+- **query**（提问于4月17日）：今天黄金的价格如何，当前是否推荐投资黄金
+- **输出**：可见`demo.md`
