@@ -2,7 +2,7 @@
 
 ## 概述
 
-本项目利用多个专门的 AI 智能体（Agent）协同工作，参考了项目 https://github.com/mshumer/OpenDeepResearcher?tab=readme-ov-file，根据用户提供的查询，通过网络搜索、内容提取、信息验证、动态摘要和最终报告生成，来完成一个小型研究任务。系统的核心是 PlannerAgent，它负责协调整个流程，动态生成搜索策略，并决定何时结束研究。
+本项目利用多个专门的 AI 智能体（Agent）协同工作，参考了项目 [OpenDeepResearcher](https://github.com/mshumer/OpenDeepResearcher?tab=readme-ov-file)，根据用户提供的查询，通过网络搜索、内容提取、信息验证、动态摘要和最终报告生成，来完成一个小型研究任务。系统的核心是 **PlannerAgent**，它负责协调整个流程，动态生成搜索策略，并决定何时结束研究。
 
 ## 主要特性
 
@@ -47,7 +47,7 @@ graph TD
     B --> C[Planner: 初始化];
     C --> D(Planner: 生成初步研究计划);
     D --> E(Planner: 生成初始搜索查询);
-    E --> F{开始研究迭代循环 (Iteration 1...N)};
+    E --> F{开始研究迭代循环};
 
     F --> G[Planner: 使用当前查询列表];
     G --> H(Searcher: 并发执行搜索);
